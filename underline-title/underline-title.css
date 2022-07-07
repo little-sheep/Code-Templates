@@ -20,6 +20,7 @@
   text-transform: capitalize;
   width: 200px;
   margin: 3rem auto 0;
+  color: var(--color-darkgreen);
 }
 
 .underline-title-1 {
