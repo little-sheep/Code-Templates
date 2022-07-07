@@ -9,6 +9,11 @@
   --color-lightgreen: #c1d7aa;
 }
 
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
 .loading-circle {
   width: 8rem;
   margin: 5rem auto;
@@ -26,7 +31,8 @@
 }
 
 .loading-line {
-  width: 400px;
+  width: 60vw;
+  max-width: 400px;
   height: 30px;
   margin: 10rem auto;
   border: 5px solid var(--color-lightgreen);
@@ -57,7 +63,8 @@
 
 .loading-crossline {
   width: 30px;
-  height: 400px;
+  height: 50vh;
+  max-height: 400px;
   margin: 10rem auto;
   border: 5px solid var(--color-lightgreen);
   border-radius: 50px;
@@ -67,7 +74,7 @@
 }
 
 .loading-crosslinebar {
-  height: 400px;
+  /* height: 400px; */
   transform: translateY(-100%);
   grid-column: 1/2;
   border: 5px solid var(--color-darkgreen);
