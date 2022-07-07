@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-darkgreen-1: #535c49;
+  --color-darkgreen-2: #e8efe2;
+  --color-lightgreen: #a5b892;
+  --color-green: #7c8a6e;
+  --color-white: #fff;
+  --color-black: #151713;
+  --radius: 3px;
+  --transition: all 0.3s linear;
+  --spacing: 2px;
+  --box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  display: inline-block;
+  height: 50px;
+  /* border-color: transparent; */
+  border-radius: var(--radius);
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 3rem 2rem;
+  transition: var(--transition);
+  background: transparent;
+  letter-spacing: var(--spacing);
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.regular-btn {
+  background: var(--color-darkgreen-1);
+  color: var(--color-darkgreen-2);
+}
+
+.regular-btn:hover {
+  background: var(--color-lightgreen);
+}
+
+.hipster-btn {
+  margin-left: -1.5rem;
+  background: var(--color-lightgreen);
+  color: var(--color-white);
+}
+.hipster-btn:hover {
+  /* border: 2px solid var(--color-lightgreen); */
+  /* background: transparent; */
+  background: var(--color-darkgreen-1);
+  color: var(--color-darkgreen-2);
+}
