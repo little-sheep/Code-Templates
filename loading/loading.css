@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-darkgreen: #535c49;
+  --color-lightgreen: #c1d7aa;
+}
+
+.loading {
+  width: 8rem;
+  margin: 5rem auto;
+  height: 8rem;
+  border: 5px solid var(--color-lightgreen);
+  border-radius: 50%;
+  border-top: 5px solid var(--color-darkgreen);
+  animation: show-rotate 0.8s linear infinite;
+}
+
+@keyframes show-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
