@@ -5,13 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../node_modules/normalize.css/" />
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="./buttons.css" />
   </head>
   <body>
     <div class="btns">
       <button class="btn regular-btn">regular button</button>
       <button class="btn hipster-btn">hipster button</button>
+
+      <div class="dropdown">
+        <button Dropdown class="btn dropdown-btn" id="dropdown-btn">
+          Dropdown
+        </button>
+        <ul class="dropdown-content" id="dropdown-content">
+          <li class="item"><a href="#" class="link">item 1 </a></li>
+          <li class="item"><a href="#" class="link">item 2 </a></li>
+          <li class="item"><a href="#" class="link">item 3 </a></li>
+        </ul>
+      </div>
     </div>
+    <script src="./dropdown.js"></script>
   </body>
 </html>
