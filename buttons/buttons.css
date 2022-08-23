@@ -68,8 +68,6 @@ body {
   color: var(--color-darkgreen-2);
 }
 
-
-
 /* dropdown button */
 .dropdown-btn {
   background: var(--color-darkgreen-1);
@@ -91,6 +89,7 @@ body {
   min-width: 200px;
   margin: -1.5rem 2rem;
   list-style-type: none;
+  background: var(--color-white);
   box-shadow: var(--box-shadow);
   cursor: pointer;
 }
@@ -114,6 +113,37 @@ body {
   color: var(--color-darkgreen-1);
 }
 
-.show {
+.show-list {
   display: block;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background: var(--color-darkgreen-1);
+  color: var(--color-white);
+  /* transition: var(--transition); */
+}
+
+/* .toggle-btn:hover {
+  background: var(--color-lightgreen);
+  color: var(--color-darkgreen-1);
+} */
+
+.open {
+  background: var(--color-lightgreen);
+  color: var(--color-darkgreen-1);
+}
+
+/* .open:hover{
+  background: var(--color-darkgreen-1);
+  color: var(--color-white);
+} */
+
+.show {
+  display: inline-block;
+  /* display: block; */
+}
+
+.hide {
+  display: none;
 }
