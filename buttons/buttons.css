@@ -179,13 +179,14 @@ body {
   color: var(--color-green);
 }
 
-#calculate-number {
+#calculate-number,#thumbsup-number {
   color: var(--color-darkgreen-1);
   font-size: 1rem;
 }
 
 /* Thumbsup Button */
 .thumbsup-btn i {
+  font-size: 1rem;
   cursor: pointer;
 }
 

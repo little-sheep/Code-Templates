@@ -8,19 +8,27 @@ const thumbsupNum = document.getElementById("thumbsup-number");
 /*
  * Calculate Button
  */
-
-// localStorage.setItem("calculateSum", "0");
-
+initialCalculate();
 changeCalculateColor();
 calculateNum.innerText = localStorage.calculateSum;
+
 calculateBtn.addEventListener("click", calculate);
 
-function calculate() {
-  if (localStorage.calculateSum) {
-    localStorage.calculateSum = Number(localStorage.calculateSum) + 1;
+function initialCalculate() {
+  if (localStorage.calculateSum > 0) {
+    console.log(`initialized`);
   } else {
-    localStorage.calculateSum = 1;
+    localStorage.calculateSum = 0;
+    console.log(
+      `initial. ${typeof localStorage.calculateSum} ${
+        localStorage.calculateSum
+      }`
+    );
   }
+}
+
+function calculate() {
+  localStorage.calculateSum++;
   changeCalculateColor();
   calculateNum.innerText = localStorage.calculateSum;
   // thumbsupNum.innerText = localStorage.calculateSum;
