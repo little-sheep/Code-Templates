@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css" />
     <link rel="stylesheet" href="./buttons.css" />
   </head>
@@ -25,8 +32,20 @@
           <li class="item"><a href="#" class="link">item 3 </a></li>
         </ul>
       </div>
+
+      <div class="calculate">
+        <button class="calculate-btn">
+          <i class="fa-solid fa-heart calculate-0" id="calculate-btn"></i>
+          <span id="calculate-number"></span>
+        </button>
+        <button class="thumbsup-btn">
+          <i class="fa-solid fa-thumbs-up thumbsup-0" id="thumbsup-btn"></i>
+          <span id="thumbsup-number"></span>
+        </button>
+      </div>
     </div>
     <script src="./dropdown.js"></script>
     <script src="./toggle.js"></script>
+    <script src="./calculate.js"></script>
   </body>
 </html>

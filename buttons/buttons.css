@@ -147,3 +147,57 @@ body {
 .hide {
   display: none;
 }
+
+/* Calculate Button */
+.calculate-btn,
+.thumbsup-btn {
+  margin: 1rem 2rem;
+  background: transparent;
+  border: none;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.calculate-btn i {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.calculate-0 {
+  color: var(--color-lightgreen);
+}
+
+.calculate-1 {
+  color: var(--color-darkgreen-1);
+}
+
+.calculate-0:hover,
+.calculate-1:hover {
+  color: var(--color-green);
+}
+
+#calculate-number {
+  color: var(--color-darkgreen-1);
+  font-size: 1rem;
+}
+
+/* Thumbsup Button */
+.thumbsup-btn i {
+  cursor: pointer;
+}
+
+.thumbsup-0 {
+  color: var(--color-lightgreen);
+}
+
+.thumbsup-1 {
+  color: var(--color-darkgreen-1);
+}
+
+.thumbsup-0:hover,
+.thumbsup-1:hover {
+  color: var(--color-green);
+}
