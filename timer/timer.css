@@ -1,0 +1,109 @@
+:root {
+  --color-brown: #2e1f20;
+  --color-darkpink: #bfa1a4;
+  --color-lightpink: #cbb3b6;
+  --color-pink: #e0d1d3;
+  --color-lightgreen-1: #c3c6b8;
+  --color-lightgreen-2: #abb09c;
+  --color-lightgreen-3: #93997f;
+  --color-green: #798066;
+  --color-darkgreen: #5e634f;
+  --color-white: #ffffff;
+  --color-blue: #5a7ac4;
+  --color-lightpurple-1: #d3d2e0;
+  --color-lightpurple-2: #b5b3cb;
+  --color-lightpurple-3: #9895b6;
+  --color-lightpurple-4: #7a77a2;
+  --color-purple: #615d88;
+  --color-darkpurple: #4b496a;
+  --color-black: #0f0a0b;
+  --transition: all 0.3s linear;
+  --box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.2);
+  --border: 2px dashed var(--color-darkpurple);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.timer-1 {
+  margin: 1rem 1.5rem;
+  text-align: right;
+}
+
+#timer-1 {
+  color: var(--color-darkpurple);
+}
+
+.timer {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+
+.timer-2 {
+  width: 60vw;
+  max-width: 350px;
+  min-width: 280px;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); */
+  grid-template-columns: 2fr repeat(3, auto);
+  grid-template-rows: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  border: var(--border);
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+#timer-2 {
+  /* border: var(--border); */
+  /* border-radius: 30px; */
+  color: var(--color-darkpurple);
+}
+
+.timer-btn {
+  border: none;
+  border-radius: 50px;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.timer-btn:hover {
+  box-shadow: var(--box-shadow);
+}
+
+#timer-2-start {
+  background: var(--color-lightgreen-3);
+  color: var(--color-darkgreen);
+}
+#timer-2-start:hover {
+  background: var(--color-darkgreen);
+  color: var(--color-lightgreen-1);
+}
+
+#timer-2-stop {
+  background: var(--color-lightpink);
+  color: var(--color-darkgreen);
+}
+
+#timer-2-stop:hover {
+  background: var(--color-darkpink);
+  color: var(--color-brown);
+}
+#timer-2-clear {
+  background: var(--color-purple);
+  color: var(--color-lightpurple-1);
+}
+
+#timer-2-clear:hover {
+  background: var(--color-darkpurple);
+  color: var(--color-lightpurple-2);
+}

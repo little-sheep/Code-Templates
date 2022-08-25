@@ -55,6 +55,7 @@ a:visited {
   text-transform: capitalize;
   color: var(--color-green-4);
   letter-spacing: var(--spacing);
+  cursor: pointer;
 }
 
 .nav-link:hover {
@@ -85,6 +86,9 @@ a:visited {
   .nav ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1170px) {
@@ -96,7 +100,7 @@ a:visited {
   }
   .nav ul {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .nav-link {
