@@ -1,13 +1,14 @@
 :root {
-  --color-brown: #2e1f20;
-  --color-darkpink: #bfa1a4;
-  --color-lightpink: #cbb3b6;
-  --color-pink: #e0d1d3;
+  --color-brown: #291b1cac;
+  --color-darkpink: #bb9fa2;
+  --color-lightpink: #b1979adc;
+  --color-pink: #852938;
   --color-lightgreen-1: #c3c6b8;
   --color-lightgreen-2: #abb09c;
   --color-lightgreen-3: #93997f;
-  --color-green: #798066;
-  --color-darkgreen: #5e634f;
+  --color-green-1: #a4b083;
+  --color-green-2: #bcd275;
+  --color-darkgreen: #4b4f3a;
   --color-white: #ffffff;
   --color-blue: #5a7ac4;
   --color-lightpurple-1: #d3d2e0;
@@ -18,7 +19,7 @@
   --color-darkpurple: #4b496a;
   --color-black: #0f0a0b;
   --transition: all 0.3s linear;
-  --box-shadow: 0 1px 1px 0 rgb(0, 0, 0, 0.2);
+  --box-shadow: 0 1px 4px 1px rgb(0, 0, 0, 0.3);
   --border: 2px dashed var(--color-darkpurple);
 }
 
@@ -72,38 +73,51 @@ body {
   border: none;
   border-radius: 50px;
   padding: 0.2rem 0.8rem;
-  cursor: pointer;
   transition: var(--transition);
 }
 
-.timer-btn:hover {
+.checked {
+  opacity: 0.6;
+  /* cursor: default; */
+  cursor: not-allowed;
+}
+
+.timer-2-start {
+  background: var(--color-green-1);
+  color: var(--color-darkgreen);
+}
+
+.timer-2-start-uncheck:hover {
+  background: var(--color-darkgreen);
+  color: var(--color-green-2);
   box-shadow: var(--box-shadow);
 }
 
-#timer-2-start {
-  background: var(--color-lightgreen-3);
-  color: var(--color-darkgreen);
-}
-#timer-2-start:hover {
-  background: var(--color-darkgreen);
-  color: var(--color-lightgreen-1);
-}
-
-#timer-2-stop {
-  background: var(--color-lightpink);
-  color: var(--color-darkgreen);
-}
-
-#timer-2-stop:hover {
+.timer-2-stop {
   background: var(--color-darkpink);
   color: var(--color-brown);
 }
-#timer-2-clear {
-  background: var(--color-purple);
-  color: var(--color-lightpurple-1);
+
+.timer-2-stop-uncheck:hover {
+  background: var(--color-lightpink);
+  color: var(--color-pink);
+  box-shadow: var(--box-shadow);
 }
 
-#timer-2-clear:hover {
-  background: var(--color-darkpurple);
+.timer-2-clear {
+  background: var(--color-purple);
   color: var(--color-lightpurple-2);
+}
+
+.timer-2-clear-uncheck:hover {
+  background: var(--color-darkpurple);
+  color: var(--color-lightpurple-1);
+  box-shadow: var(--box-shadow);
+}
+
+.timer-2-start-uncheck,
+.timer-2-stop-uncheck,
+.timer-2-clear-uncheck {
+  opacity: 1;
+  cursor: pointer;
 }
